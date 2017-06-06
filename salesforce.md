@@ -25,5 +25,3 @@ def getToken(loginUrl, key, secret, user, pass):
 	return json.loads(r.content)
 ```
 
-
-
