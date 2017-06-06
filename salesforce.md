@@ -25,3 +25,6 @@ def getToken(loginUrl, key, secret, user, pass):
 	return json.loads(r.content)
 ```
 
+
+#### [Standard Object Fields](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_list.htm)
+

@@ -14,8 +14,6 @@
 	* You can combine multiple searches in one parameter. Ex: `search=endAt>1465224632 endAt<1465829432 currentStatus=1`
 
 #### Bulk API
-* CDOS
-
 
 #### CDOs 
 * Find CDO id (parent id)
