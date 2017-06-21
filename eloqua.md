@@ -51,4 +51,16 @@ def deleteAssets(ids, url, username, company, password):
 			notdeleted.append(asset_id)
 
 	print 'not deleted: ' + str(notdeleted)
+
 ```
+
+
+#### Undocumented features
+
+ * When pulling a CDO, using the undocumented 2.0 enpoint gives you the record count of what is in the CDO 
+ `GET /api/REST/2.0/assets/customObject/{parentId}`
+ instead of...
+ `GET /api/REST/1.0/assets/customObject/{parentId}`
+
+
+
