@@ -64,3 +64,29 @@ def deleteAssets(ids, url, username, company, password):
 
 
 
+#### Parsing CDO json data to csv 
+* Here is a quite python script to output a csv file from an input of cdo data aquired from the api. 
+
+```
+import json 
+
+fname = raw_input("Json file: ").rstrip()
+with open(fname , 'r') as f:
+	json_obj = json.load(f)
+with open('out_json_to_csv_cdo.csv', 'w') as out:
+	field_headers=[]
+	for field in json_obj['elements'][0]['fieldValues']:
+		out.write( field['id'] + ',')
+		field_headers.append(field['id'])
+	out.write( '\n')
+	for entry in json_obj['elements']:
+		for field_header in field_headers:
+			for field in entry['fieldValues']:
+				if field['id'] == field_header:
+					val = field.get('value')
+					break
+			if val == None:
+				val = ""
+			out.write( val + ',')
+		out.write( '\n')
+```
