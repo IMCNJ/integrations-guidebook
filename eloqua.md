@@ -13,6 +13,13 @@
 	* <field_name><operation><value>
 	* You can use wild charater *. Ex: `search=EmailAddress1=steve*`
 	* You can combine multiple searches in one parameter. Ex: `search=endAt>1465224632 endAt<1465829432 currentStatus=1`
+													    
+													    Active = 1
+Draft = 2
+DraftWaitingForApproval = 3
+DraftApproved = 4
+Scheduled = 5
+Completed = 7
 
 #### Bulk API
 
