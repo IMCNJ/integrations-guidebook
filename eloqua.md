@@ -8,6 +8,7 @@
 
 
 #### REST API General info
+* [Eloqua Search Documentation](https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCAB/Developers/RESTAPI/Tutorials/search_parameter.htm?cshid=SearchParam)
 * Search fields/terms
 	* <field_name><operation><value>
 	* You can use wild charater *. Ex: `search=EmailAddress1=steve*`
